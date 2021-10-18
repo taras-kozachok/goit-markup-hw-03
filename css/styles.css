@@ -21,10 +21,32 @@
   --secondary-bcg-color: #f5f4fa;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-seref;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .list {
@@ -44,10 +66,13 @@ body {
 
 .logo-name-header {
   color: var(--primary-black-color);
+  margin-right: 93px;
 }
 
 .logo-name-footer {
   color: var(--primary-white-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .logo-web {
@@ -56,6 +81,10 @@ body {
 
 .logo-name:hover {
   color: var(--accent-color);
+}
+
+.item-contacts:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .visually-hidden {
@@ -70,7 +99,33 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* site nav */
+.site-nav {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid#ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -96,6 +151,8 @@ body {
 }
 .link-contact {
   list-style: none;
+  display: flex;
+  margin-left: auto;
 }
 .link-contact .link {
   color: var(--primary-text-color);
@@ -103,6 +160,9 @@ body {
 .link-contact .link:hover,
 .link-contact .link:focus {
   color: var(--accent-color);
+}
+.link-tel {
+  margin-left: 50px;
 }
 /* Контактыы в футере */
 footer {
@@ -116,6 +176,7 @@ footer {
 .footer-list .footer-link {
   color: var(--footer-adr-color);
   text-decoration: none;
+  padding-bottom: ;
 }
 .footer-list :hover,
 .footer-list :focus {
@@ -137,6 +198,12 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 267px;
+  padding-right: 267px;
+}
 /* section */
 .section-title {
   color: var(--title-text-color);
@@ -154,19 +221,50 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.list-features {
+  display: flex;
+}
+.features-item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* section doing */
+.list-doing {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+.list-doing-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* section team */
 .section-team {
   background-color: var(--secondary-bcg-color);
 }
-
+.list-team {
+  display: flex;
+  padding-top: 50px;
+}
 .team-list {
   background-color: var(--primary-white-color);
+}
+.container-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list:not(:last-child) {
+  margin-right: 30px;
 }
 .section-team .team-title {
   color: var(--title-text-color);
@@ -182,6 +280,11 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.team-item-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* section portfolio */
 .portfolio-list .title {
   color: var(--title-text-color);
@@ -195,9 +298,46 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-.btton-filtr {
+.menu-partfolio {
+  display: flex;
+  padding-left: 295px;
+  padding-right: 294px;
+  justify-content: space-between;
+}
+.container-partfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+.portfolio-list {
+  padding-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.portfolio-item-descrip {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+}
+
+.item-portfolio {
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.btton-filtr {
+}
+.button-hero {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 .button {
   cursor: pointer;
   border: none;

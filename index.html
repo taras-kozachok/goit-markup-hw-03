@@ -21,7 +21,7 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="header-all">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo-name logo-name-header link" href="./index.html">
@@ -38,13 +38,13 @@
           </ul>
         </nav>
         <ul class="link-contact list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
+          <li class="connect-item">
+            <a href="mailto:info@devstudio.com" class="link connect-item-all"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link link-tel"
+          <li class="connect-item">
+            <a href="tel:+380961111111" class="link connect-item-all"
               >+38 096 111 11 11</a
             >
           </li>
@@ -54,7 +54,7 @@
     <main>
       <!--Герой-->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="button-hero button primary" type="button">
             Заказать услугу
@@ -98,7 +98,7 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section">
+      <section class="section section-doing">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list list-doing">
@@ -125,10 +125,9 @@
                 alt="Фото Игорь Демьяненко"
                 width="270"
               />
-              <div class="team-item-description">
-                <h3 class="team-title">Игорь Демьяненко</h3>
-                <p class="team-list-text" lang="en">Product Designer</p>
-              </div>
+
+              <h3 class="team-title">Игорь Демьяненко</h3>
+              <p class="team-list-text" lang="en">Product Designer</p>
             </li>
             <li class="team-list">
               <img
@@ -136,10 +135,9 @@
                 alt="Фото Ольга Репина"
                 width="270"
               />
-              <div class="team-item-description">
-                <h3 class="team-title">Ольга Репина</h3>
-                <p class="team-list-text" lang="en">Frontend Developer</p>
-              </div>
+
+              <h3 class="team-title">Ольга Репина</h3>
+              <p class="team-list-text" lang="en">Frontend Developer</p>
             </li>
             <li class="team-list">
               <img
@@ -147,10 +145,9 @@
                 alt="Фото Николай Тарасов"
                 width="270"
               />
-              <div class="team-item-description">
-                <h3 class="team-title">Николай Тарасов</h3>
-                <p class="team-list-text" lang="en">Marketing</p>
-              </div>
+
+              <h3 class="team-title">Николай Тарасов</h3>
+              <p class="team-list-text" lang="en">Marketing</p>
             </li>
             <li class="team-list">
               <img
@@ -168,8 +165,8 @@
       </section>
     </main>
     <!--Футер-->
-    <footer>
-      <div class="container container-footer">
+    <footer class="footer">
+      <div class="container">
         <a class="logo-name logo-name-footer link" href="./index.html">
           <span class="logo-web">Web</span>Studio</a
         >

@@ -187,7 +187,6 @@ footer {
 .footer-list .footer-link {
   color: var(--footer-adr-color);
   text-decoration: none;
-  padding-bottom: ;
 }
 .footer-list :hover,
 .footer-list :focus {

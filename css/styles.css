@@ -115,9 +115,6 @@ body {
   border-bottom: 1px solid#ececec;
 }
 
-.header-portfolio {
-  margin-bottom: 94px;
-}
 .header-nav {
   display: flex;
   align-items: center;
@@ -158,6 +155,7 @@ body {
 .link-contact {
   list-style: none;
   display: flex;
+
   margin-left: auto;
 }
 .link-contact .link {
@@ -172,6 +170,7 @@ body {
 }
 
 .connect-item-all {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -263,27 +262,37 @@ footer {
 
 .list-doing {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
-.list-doing-item:not(:last-child) {
-  margin-right: 30px;
+.list-doing-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
+
 /* section team */
 .section-team {
   background-color: var(--secondary-bcg-color);
 }
 .list-team {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 .team-list {
   background-color: var(--primary-white-color);
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list:not(:last-child) {
-  margin-right: 30px;
-}
+
 .section-team .team-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -291,7 +300,7 @@ footer {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 20px;
+
   margin-bottom: 10px;
 }
 .team-list-text {
@@ -299,7 +308,11 @@ footer {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+}
+
+.team-item-descrip {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* section portfolio */
@@ -327,7 +340,18 @@ footer {
 }
 
 .section-portfolio {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-item-descrip {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-list {
@@ -336,19 +360,16 @@ footer {
   margin-left: -30px;
   margin-bottom: -30px;
 }
-
-.portfolio-item-descrip {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border: 1px solid #eeeeee;
-}
-
 .item-portfolio {
-  width: calc(100% / 3 -30px);
+  width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.image-item {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .button-filtr {
